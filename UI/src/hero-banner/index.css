@@ -1,0 +1,54 @@
+@font-face {
+	font-family: natural;
+	src: url("fonts/CartooNature.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: natural;
+}
+
+.hero {
+	background-image: url("images/main-bg.jpg");
+	background-size: cover;
+	padding: 16px;
+	height: 50vh;
+}
+
+.btn-wrapper {
+	display: block;
+	text-align: center;
+}
+
+/* we made btn using div and a tag
+that's why inline-block */
+.btn {
+	border: none;
+	border-radius: 3em;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	font-size: 1em;
+	padding: 1em 2em;
+	width: auto;
+	font-family: inherit;
+	background: white;
+}
+
+.cta-btn:hover {
+	background-color: lightblue;
+}
+
+.title {
+	font-weight: 500;
+	color: lightgreen;
+	text-shadow: 0 0 4px black;
+	font-size: 28px;
+}
+
+/* utility */
+.highlight {
+	border-bottom: 4px double white;
+}

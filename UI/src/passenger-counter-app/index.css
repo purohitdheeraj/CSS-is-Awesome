@@ -33,11 +33,11 @@ body {
 	cursor: pointer;
 }
 
-.btn-increment {
+#increment-btn {
 	background: lightseagreen;
 }
 
-.btn-save {
+#save-btn {
 	background: #fff;
 }
 

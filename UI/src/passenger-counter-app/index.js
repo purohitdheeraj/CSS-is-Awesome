@@ -1,8 +1,3 @@
-// btn
-let incrementBtn = document.getElementById(
-	"increment-count"
-);
-
 // span
 let displayCount = document.getElementById("display-count");
 
@@ -16,7 +11,6 @@ let count = 0;
 function increment() {
 	count += 1;
 	displayCount.textContent = count;
-	console.log("from increment");
 }
 
 // save it in previous entries

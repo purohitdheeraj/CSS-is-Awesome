@@ -27,6 +27,15 @@ body {
 	flex-direction: column;
 }
 
+header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background: goldenrod;
+	width: 100%;
+	max-width: 1200px;
+}
+
 .badge-container {
 	padding: 1rem;
 	background: #eee;
@@ -37,7 +46,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	/* position: relative; */
 }
 
 .icon-msg {
@@ -64,14 +72,16 @@ body {
 space can be solved by border-box on all prop before and after
 */
 
+/* fixed is a bad guy it dont obey parent relative rule like absolute */
+
 .toast {
 	position: fixed;
 	bottom: 0;
+	max-width: 1200px;
+	width: 100%;
 	display: none;
 	/* again very imp prop to set otherwise toast will overflow outside container */
 	background: grey;
-	max-width: 300px;
-	width: 100%;
 	color: #eee;
 	margin: 2.5rem 0;
 	padding: 0.5rem;
